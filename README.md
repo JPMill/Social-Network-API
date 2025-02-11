@@ -19,23 +19,27 @@ Clone the repository: git clone <repository_url> Navigate to the project directo
 ## Usage
 After running 'npm run start', open Postman. In post man set the url to http://localhost:3001/ and test the express routes.
 
+**User Routes:**  
 `GET` | `/api/users` → Retrieve all users  
 `GET` | `/api/users/:id` → Retrieve a single user (with thoughts & friends)  
 `POST` | `/api/users` → Create a new user  
 `PUT` | `/api/users/:id` → Update user information  
-`DELETE` | `/api/users/:id` → Delete a user (and their thoughts) 
+`DELETE` | `/api/users/:id` → Delete a user (and their thoughts)  
 
-POST | /api/users/:userId/friends/:friendId | Add a friend
-DELETE | /api/users/:userId/friends/:friendId | Remove a friend
+**Friend Routes:**  
+`POST` | `/api/users/:userId/friends/:friendId` → Add a friend  
+`DELETE` | `/api/users/:userId/friends/:friendId` → Remove a friend  
 
-GET | /api/thoughts | Retrieve all thoughts
-GET | /api/thoughts/:id | Retrieve a single thought
-POST | /api/thoughts | Create a thought (and link it to a user)
-PUT | /api/thoughts/:id | Update a thought
-DELETE | /api/thoughts/:id | Delete a thought
+**Thought Routes:**  
+`GET` | `/api/thoughts` → Retrieve all thoughts  
+`GET` | `/api/thoughts/:id` → Retrieve a single thought  
+`POST` | `/api/thoughts` → Create a thought (and link it to a user)  
+`PUT` | `/api/thoughts/:id` → Update a thought  
+`DELETE` | `/api/thoughts/:id` → Delete a thought  
 
-POST | /api/thoughts/:thoughtId/reactions | Add a reaction to a thought
-DELETE | /api/thoughts/:thoughtId/reactions/:reactionId | Remove a reaction
+**Reaction Routes:**  
+`POST` | `/api/thoughts/:thoughtId/reactions` → Add a reaction to a thought  
+`DELETE` | `/api/thoughts/:thoughtId/reactions/:reactionId` → Remove a reaction 
 
 ## License
 This project is licensed under the MIT license.  

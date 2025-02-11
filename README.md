@@ -19,11 +19,11 @@ Clone the repository: git clone <repository_url> Navigate to the project directo
 ## Usage
 After running 'npm run start', open Postman. In post man set the url to http://localhost:3001/ and test the express routes.
 
-GET | /api/users | Retrieve all users
-GET | /api/users/:id | Retrieve a single user (with thoughts & friends)
-POST | /api/users | Create a new user
-PUT | /api/users/:id | Update user information
-DELETE | /api/users/:id | Delete a user (and their thoughts)
+`GET` | `/api/users` → Retrieve all users  
+`GET` | `/api/users/:id` → Retrieve a single user (with thoughts & friends)  
+`POST` | `/api/users` → Create a new user  
+`PUT` | `/api/users/:id` → Update user information  
+`DELETE` | `/api/users/:id` → Delete a user (and their thoughts) 
 
 POST | /api/users/:userId/friends/:friendId | Add a friend
 DELETE | /api/users/:userId/friends/:friendId | Remove a friend
